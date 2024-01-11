@@ -9,7 +9,7 @@ jobs:
   hola:
     runs-on: ubuntu-latest
     steps:
-      - name: Mensaje de saludo
       - uses: actions/checkout@v3
+      - name: Mensaje de saludo
         run: |
           echo "Hola mundo..."
