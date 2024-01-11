@@ -1,0 +1,15 @@
+name: Sitio web con Docker
+
+on: [push]
+
+permissions:
+  contents: read
+
+jobs:
+  hola:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mensaje de saludo
+      - uses: actions/checkout@v3
+        run: |
+          echo "Hola mundo..."
