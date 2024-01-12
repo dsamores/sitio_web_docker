@@ -20,3 +20,11 @@ jobs:
         with:
           push: true
           tags: damores/sitio_web_docker:latest
+  test:
+    runs-on: ubuntu-latest
+    name: test
+    steps:
+      - uses: actions/checkout@v3
+      - name: Correr pruebas unitarias
+        run: |
+          make test
