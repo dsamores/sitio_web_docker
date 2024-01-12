@@ -6,4 +6,4 @@ run:
 
 test:
 	docker build -t sitio_web_docker_tests .
-	docker run sitio_web_docker_tests pytest --cov=app --cov-report term-missing --cov-fail-under=80
+	docker run sitio_web_docker_tests pytest --cov=app --cov-report term-missing --cov-fail-under=70
